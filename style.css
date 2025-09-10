@@ -12,42 +12,6 @@ body {
     line-height: 1.6;
 }
 
-#greet {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.terminal h1 {
-    color: #ffffff;
-}
-
-.fade-out {
-    animation: flashThenFade 1s ease forwards;
-}
-
-@keyframes flashThenFade {
-    0% {
-        background-color: #ffffff;
-    }
-
-    10% {
-        background-color: #ffffff;
-    }
-
-    100% {
-        background-color: transparent;
-        opacity: 0;
-    }
-}
-
 /* ヘッダー・メニュー*/
 header {
     position: fixed;
@@ -141,7 +105,7 @@ section {
 }
 
 #top {
-    background-color: #e0f7fa;
+    background-color: #f9fbff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,6 +320,12 @@ h2 {
 h3 {
     color: #333;
     margin: 0 0 20px;
+}
+
+p {
+    padding: 0 5%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 p {
