@@ -1,135 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Koh Uchimi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | KO25874</title>
+  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:820px;margin:40px auto;padding:0 16px;line-height:1.7}</style>
 </head>
-
 <body>
-  <div id="greet">
-    <div class="terminal">
-      <h1 id="line1"></h1>
-    </div>
-  </div>
-  <div id="main-content" style="display: none;"> </div>
-
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#aboutme">About Me</a></li>
-        <li class="dropdown">
-          <a href="#works">Portfolio</a>
-          <ul class="dropdown-menu">
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="top">
-    <h1>Portfolio &lt;&#61; Koh&nbsp;Uchimi</h1>
-  </section>
-
-  <section id="aboutme">
-    <h1>About Me</h1>
-
-    <div class="slider-wrapper">
-      <div class="slider-window">
-        <div class="slider-track">
-          <!-- 各スライド -->
-          <div class="slider-item">
-            <img src="img/icon1.png" alt="Icon 1" class="slider-icon">
-            <p class="slider-description">宮城県仙台市出身。國學院大學 経済学部
-              経営学科在学。所属は宮下ゼミ。マーケティングを専攻し、特にDXに注目しています。現在は日本と中国のDXを比較し、単なる"デジタル化"からCXを高める本義の"DX"を実現するための企業のあり方について研究を進めています。
-            </p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon2.png" alt="Icon 2" class="slider-icon">
-            <p class="slider-description">
-              ５歳から中学までサッカーチームに所属していました。現在もたまに友人とフットサルなどを楽しんでいます。駅伝にも参加したことがあるのえ体力には自信があります！</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              JAZZ</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              ワイン</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              ワイン</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-buttons">
-        <button class="prevBtn">←</button>
-        <button class="nextBtn">→</button>
-      </div>
-    </div>
-  </section>
-
-<section id="works">
+  <h1>KO25874 Portfolio</h1>
+  <p>自己紹介やスキル、作品リンクをここに。</p>
   <h2>Works</h2>
-  <p>取り組んだこと・制作物をご紹介します。</p>
-
-  <div class="works-grid">
-    <div class="work-item" data-title="Portfolio" data-img="IMG/Work1.png" data-desc="簡単なポートフォリオです。HTML・CSS・JavaScriptの実験も兼ねて制作しました。">
-      <img src="IMG/Work1.png" alt="Portfolio">
-      <p>Portfolio</p>
-    </div>
-    <div class="work-item" data-title="Blog" data-img="IMG/Work2.png" data-desc="ブログというか日記です。制作の過程の記録と備忘録として制作しました。">
-      <img src="IMG/Work2.png" alt="Blog">
-      <p>Blog</p>
-    </div>
-    <div class="work-item" data-title="TicketManager" data-img="IMG/Work3.png" data-desc="チーム内でのタスク管理用のソフトです。Redmineをモデルにチケット管理をメインにしたミニマムデザインのソフトを目指しています。Pythonの学習の一環。">
-      <img src="IMG/Work3.png" alt="Ticket Manager">
-      <p>Ticket Manager(制作途中)</p>
-    </div>
-  </div>
-
-<!-- モーダルウィンドウ -->
-<div class="modal" id="workModal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <img id="modalImage" src="" alt="">
-    <p id="modalDesc"></p>
-  </div>
-</div>
-</section>
-
-
-<section id="skills">
-  <h1>Skills</h1>
-  <p>Text</p>
-</section>
-
-  <section id="contact">
-    <h1>Contact</h1>
-    <p><strong>Email:</strong> u.ko25874@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Koh Uchimi</p>
-  </footer>
-
+  <ul>
+    <li><a href="#">作品タイトル1</a> — 説明</li>
+    <li><a href="#">作品タイトル2</a> — 説明</li>
+  </ul>
+  <p>📫 連絡先: <a href="mailto:your@mail.com">your@mail.com</a></p>
 </body>
-
-<script src="js/greet.js"></script>
-<script src="js/aboutme-slider.js"></script>
-<script src="js/works-grids.js"></script>
-
-
 </html>
