@@ -1,126 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Koh Uchimi</title>
-  <link rel="stylesheet" href="style.css">
+  <title>佐藤 凛｜新卒SE 内定者の自己紹介</title>
+  <meta name="description" content="新卒SE内定者のカジュアルな自己紹介サイト。好き・得意・いま学んでいることを1ページで。">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="assets/badge.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/avatar.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#aboutme">About Me</a></li>
-        <li class="dropdown">
-          <a href="#works">Portfolio</a>
-          <ul class="dropdown-menu">
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="トップへ">
+        <img src="assets/badge.svg" width="28" height="28" alt="ロゴ">
+        <span>RIN SATO</span>
+      </a>
+      <nav aria-label="主要メニュー">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list">☰<span class="sr-only">メニュー</span></button>
+        <ul id="nav-list" class="nav__list">
+          <li><a href="#about">自己紹介</a></li>
+          <li><a href="#now">最近</a></li>
+          <li><a href="#skills">スキル</a></li>
+          <li><a href="#projects">学生時代</a></li>
+          <li><a href="#hobby">趣味</a></li>
+          <li><a href="#contact">連絡先</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="top">
-    <h1>Portfolio &lt;&#61; Koh&nbsp;Uchimi</h1>
-  </section>
-
-  <section id="aboutme">
-    <h1>About Me</h1>
-
-    <div class="slider-wrapper">
-      <div class="slider-window">
-        <div class="slider-track">
-          <!-- 各スライド -->
-          <div class="slider-item">
-            <img src="img/icon1.png" alt="Icon 1" class="slider-icon">
-            <p class="slider-description">宮城県仙台市出身。國學院大學 経済学部
-              経営学科在学。所属は宮下ゼミ。マーケティングを専攻し、特にDXに注目しています。現在は日本と中国のDXを比較し、単なる"デジタル化"からCXを高める本義の"DX"を実現するための企業のあり方について研究を進めています。
-            </p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon2.png" alt="Icon 2" class="slider-icon">
-            <p class="slider-description">
-              ５歳から中学までサッカーチームに所属していました。現在もたまに友人とフットサルなどを楽しんでいます。駅伝にも参加したことがあるのえ体力には自信があります！</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              JAZZ</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              ワイン</p>
-          </div>
-          <div class="slider-item">
-            <img src="img/icon3.png" alt="Icon 3" class="slider-icon">
-            <p class="slider-description">
-              ワイン</p>
-          </div>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero__text">
+        <h1>はじめまして、<span class="underline">佐藤 凛</span>です。</h1>
+        <p class="lead">2026年春入社予定の新卒SE（内定者）。<strong>「人の仕事を軽くするソフトウェア」</strong>づくりにわくわくします。</p>
+        <div class="hero__cta">
+          <a class="btn" href="#about">30秒で自己紹介</a>
+          <a class="btn-ghost" href="#contact">QR/連絡先</a>
         </div>
       </div>
-
-      <div class="slider-buttons">
-        <button class="prevBtn">←</button>
-        <button class="nextBtn">→</button>
+      <div class="hero__art">
+        <img src="assets/avatar.svg" alt="佐藤凛の人物アイコン" width="300" height="300" loading="eager">
       </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section__head">
+        <h2>自己紹介（30秒）</h2>
+        <p class="sub">出身・得意・好きの3点だけ。</p>
+      </div>
+      <div class="grid about">
+        <div class="card">
+          <h3>基本</h3>
+          <ul class="list">
+            <li>名前：<strong>佐藤 凛（さとう りん）</strong></li>
+            <li>出身：千葉 → 東京</li>
+            <li>専攻：情報工学（ヒューマンコンピュータインタラクション）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>得意</h3>
+          <ul class="list">
+            <li>要件を図にして整理（C4、ER、シーケンス）</li>
+            <li>シンプルなUI設計とフロント実装</li>
+            <li>地道な改善（アラート削減・自動化）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>好き</h3>
+          <ul class="list">
+            <li>テストが通る瞬間</li>
+            <li>チームでふりかえり</li>
+            <li>図書館で集中する時間</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="now" class="section container">
+      <div class="section__head">
+        <h2>最近やっていること（今月）</h2>
+        <p class="sub">配属後に早く貢献するための準備。</p>
+      </div>
+      <div class="grid now">
+        <div class="card">
+          <h3>① Java基礎の棚卸し</h3>
+          <p class="muted">逆ポーランド電卓・TODO APIで <code>OOP/例外/テスト</code> を復習。</p>
+        </div>
+        <div class="card">
+          <h3>② SQLとデータモデリング</h3>
+          <p class="muted">正規化／結合戦略／インデックスの挙動を検証。</p>
+        </div>
+        <div class="card">
+          <h3>③ 開発環境の快適化</h3>
+          <p class="muted">dotfiles整備、ショートカット練習、Lint/Format自動化。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section__head">
+        <h2>スキル（基礎レベル）</h2>
+        <p class="sub">「まずは読める・直せる」から始めます。</p>
+      </div>
+      <div class="grid skills">
+        <div class="card">
+          <h3>バックエンド</h3>
+          <ul class="list">
+            <li>Java / Spring Boot（CRUD / バリデーション / JPA）</li>
+            <li>REST 設計（OpenAPI / エラーハンドリング）</li>
+            <li>RDB（PostgreSQL / MySQL）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>フロント</h3>
+          <ul class="list">
+            <li>HTML / CSS / TypeScript（基本）</li>
+            <li>React / Vite（簡易ツール）</li>
+            <li>アクセシビリティの初歩</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>その他</h3>
+          <ul class="list">
+            <li>Git（ブランチ運用 / PR）</li>
+            <li>Docker でのローカル開発</li>
+            <li>テスト（JUnit / Jest）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section__head">
+        <h2>学生時代の小さな制作</h2>
+        <p class="sub">規模は小さくても、工夫で価値を出す。</p>
+      </div>
+      <div class="grid projects">
+        <article class="card project">
+          <h3>研究室の貸出管理ミニアプリ</h3>
+          <p class="muted">React / Supabase</p>
+          <p>備品の重複予約が減り、<strong>未返却がゼロ</strong>に。UIの必須入力とSlack通知で実現。</p>
+        </article>
+        <article class="card project">
+          <h3>学園祭のタイムテーブル</h3>
+          <p class="muted">Astro / YAML</p>
+          <p>出演者変更に強い静的生成。編集はファイル更新だけでOKに。</p>
+        </article>
+        <article class="card project">
+          <h3>「時短コマンド集」</h3>
+          <p class="muted">Zsh / Make</p>
+          <p>レポート雛形生成や画像圧縮を1コマンド化。<em>みんなの5分</em>を取り戻す。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hobby" class="section container">
+      <div class="section__head">
+        <h2>趣味・人となり</h2>
+        <p class="sub">話のタネにどうぞ。</p>
+      </div>
+      <div class="grid hobby">
+        <div class="card">
+          <h3>コーヒー</h3>
+          <p class="muted">浅煎り派。最近はエチオピア・イルガチェフェ。</p>
+        </div>
+        <div class="card">
+          <h3>ランニング</h3>
+          <p class="muted">朝の3kmだけでも気分が違う。</p>
+        </div>
+        <div class="card">
+          <h3>写真</h3>
+          <p class="muted">単焦点35mmでスナップ。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section__head">
+        <h2>連絡先 / QR</h2>
+        <p class="sub">このページのURLをQRにして名札に貼る予定。</p>
+      </div>
+      <div class="card contact">
+        <dl class="kv">
+          <div><dt>メール</dt><dd><a href="mailto:rin.sato@example.com">rin.sato@example.com</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="#" aria-disabled="true">github.com/rin-sato（ダミー）</a></dd></div>
+          <div><dt>希望領域</dt><dd>業務システム / 生産性ツール</dd></div>
+          <div><dt>一言</dt><dd>まずは<span class="underline">小さな改善</span>から積み上げます。</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Rin Sato</small>
+      <a class="btn-ghost" href="#top">↑ トップへ</a>
     </div>
-  </section>
+  </footer>
 
-<section id="works">
-  <h2>Works</h2>
-  <p>取り組んだこと・制作物をご紹介します。</p>
-
-  <div class="works-grid">
-    <div class="work-item" data-title="Portfolio" data-img="IMG/Work1.png" data-desc="簡単なポートフォリオです。HTML・CSS・JavaScriptの実験も兼ねて制作しました。">
-      <img src="IMG/Work1.png" alt="Portfolio">
-      <p>Portfolio</p>
-    </div>
-    <div class="work-item" data-title="Blog" data-img="IMG/Work2.png" data-desc="ブログというか日記です。制作の過程の記録と備忘録として制作しました。">
-      <img src="IMG/Work2.png" alt="Blog">
-      <p>Blog</p>
-    </div>
-    <div class="work-item" data-title="TicketManager" data-img="IMG/Work3.png" data-desc="チーム内でのタスク管理用のソフトです。Redmineをモデルにチケット管理をメインにしたミニマムデザインのソフトを目指しています。Pythonの学習の一環。">
-      <img src="IMG/Work3.png" alt="Ticket Manager">
-      <p>Ticket Manager(制作途中)</p>
-    </div>
-  </div>
-
-<!-- モーダルウィンドウ -->
-<div class="modal" id="workModal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <img id="modalImage" src="" alt="">
-    <p id="modalDesc"></p>
-  </div>
-</div>
-</section>
-  
-<section id="skills">
-  <h1>Skills</h1>
-  <p>Text</p>
-</section>
-<section id="contact">
-  <h1>Contact</h1>
-  <p><strong>Email:</strong> u.ko25874@gmail.com</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Koh Uchimi</p>
-</footer>
-
+  <script src="script.js" defer></script>
 </body>
-
-<script src="js/aboutme-slider.js"></script>
-<script src="js/works-grids.js"></script>
-
-
 </html>
