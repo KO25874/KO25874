@@ -1,206 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>佐藤 凛｜新卒SE 内定者の自己紹介</title>
-  <meta name="description" content="新卒SE内定者のカジュアルな自己紹介サイト。好き・得意・いま学んでいることを1ページで。">
+  <title>Portfolio - Koh Uchimi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="description" content="内定者懇談会用のカジュアルな自己紹介サイト。">
   <meta name="theme-color" content="#2563eb">
-  <link rel="icon" href="assets/badge.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/avatar.svg" as="image" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/kame_kaeru.png" type="image/png">
+  <link rel="preload" href="assets/KOH_1.JPG" as="image" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="トップへ">
-        <img src="assets/badge.svg" width="28" height="28" alt="ロゴ">
-        <span>RIN SATO</span>
+    <div class="header-inner container">
+      <a href="#home" class="brand">
+        <span class="brand-text">Koh Uchimi · Portfolio</span>
       </a>
-      <nav aria-label="主要メニュー">
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list">☰<span class="sr-only">メニュー</span></button>
-        <ul id="nav-list" class="nav__list">
-          <li><a href="#about">自己紹介</a></li>
-          <li><a href="#now">最近</a></li>
-          <li><a href="#skills">スキル</a></li>
-          <li><a href="#projects">学生時代</a></li>
-          <li><a href="#hobby">趣味</a></li>
-          <li><a href="#contact">連絡先</a></li>
+      <nav class="nav">
+        <button class="nav-toggle">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="#aboutme">自己紹介</a></li>
+          <li><a href="#student">学生時代の取り組み</a></li>
+          <li><a href="#recent">近況報告</a></li>
+          <li><a href="#paerson">人となり</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <section id="home" class="hero">
+    <div class="hero-inner container">
+      <h1 class="hero-title">はじめまして、内海 公です。</h1>
+      <p class="hero-subtitle">デバイスサイズにフィットする表紙と、下スクロールでカードがふわっと出現。</p>
+      <div class="hero-cta">
+        <a class="icon" href="https://www.instagram.com/ko25874/">
+          <img src="assets/Instagram_Glyph_White.png" alt=Instagram>
+        </a>
+        <a class="icon" href="https://x.com/Ko25874">
+          <img src="assets/logo-white.png" alt=Twitter>
+        </a>
+      </div>
+      <div class="hero-devices">
+        <div class="device phone"></div>
+        <div class="device tablet"></div>
+        <div class="device laptop"></div>
+      </div>
+    </div>
+    <div class="scroll-cue">▼</div>
+  </section>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero__text">
-        <h1>はじめまして、<span class="underline">佐藤 凛</span>です。</h1>
-        <p class="lead">2026年春入社予定の新卒SE（内定者）。<strong>「人の仕事を軽くするソフトウェア」</strong>づくりにわくわくします。</p>
-        <div class="hero__cta">
-          <a class="btn" href="#about">30秒で自己紹介</a>
-          <a class="btn-ghost" href="#contact">QR/連絡先</a>
+  <main id="自己紹介" class="Aboutme">
+    <h2 class="section-title container">自己紹介</h2>
+    <div class="card-grid container">
+      <!-- Card 1 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-      </div>
-      <div class="hero__art">
-        <img src="assets/avatar.svg" alt="佐藤凛の人物アイコン" width="300" height="300" loading="eager">
-      </div>
-    </section>
-
-    <section id="about" class="section container">
-      <div class="section__head">
-        <h2>自己紹介（30秒）</h2>
-        <p class="sub">出身・得意・好きの3点だけ。</p>
-      </div>
-      <div class="grid about">
-        <div class="card">
-          <h3>基本</h3>
-          <ul class="list">
-            <li>名前：<strong>佐藤 凛（さとう りん）</strong></li>
-            <li>出身：千葉 → 東京</li>
-            <li>専攻：情報工学（ヒューマンコンピュータインタラクション）</li>
-          </ul>
+      </article>
+      <!-- Card 2 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-        <div class="card">
-          <h3>得意</h3>
-          <ul class="list">
-            <li>要件を図にして整理（C4、ER、シーケンス）</li>
-            <li>シンプルなUI設計とフロント実装</li>
-            <li>地道な改善（アラート削減・自動化）</li>
-          </ul>
+      </article>
+      <!-- Card 3 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-        <div class="card">
-          <h3>好き</h3>
-          <ul class="list">
-            <li>テストが通る瞬間</li>
-            <li>チームでふりかえり</li>
-            <li>図書館で集中する時間</li>
-          </ul>
+      </article>
+    </div>
+  </main>
+  <main id="学生時代の取り組み" class="Student">
+    <h2 class="section-title container">学生時代の取り組み</h2>
+    <div class="card-grid container">
+      <!-- Card 1 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-      </div>
-    </section>
-
-    <section id="now" class="section container">
-      <div class="section__head">
-        <h2>最近やっていること（今月）</h2>
-        <p class="sub">配属後に早く貢献するための準備。</p>
-      </div>
-      <div class="grid now">
-        <div class="card">
-          <h3>① Java基礎の棚卸し</h3>
-          <p class="muted">逆ポーランド電卓・TODO APIで <code>OOP/例外/テスト</code> を復習。</p>
+      </article>
+      <!-- Card 2 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-        <div class="card">
-          <h3>② SQLとデータモデリング</h3>
-          <p class="muted">正規化／結合戦略／インデックスの挙動を検証。</p>
+      </article>
+      <!-- Card 3 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
         </div>
-        <div class="card">
-          <h3>③ 開発環境の快適化</h3>
-          <p class="muted">dotfiles整備、ショートカット練習、Lint/Format自動化。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section container">
-      <div class="section__head">
-        <h2>スキル（基礎レベル）</h2>
-        <p class="sub">「まずは読める・直せる」から始めます。</p>
-      </div>
-      <div class="grid skills">
-        <div class="card">
-          <h3>バックエンド</h3>
-          <ul class="list">
-            <li>Java / Spring Boot（CRUD / バリデーション / JPA）</li>
-            <li>REST 設計（OpenAPI / エラーハンドリング）</li>
-            <li>RDB（PostgreSQL / MySQL）</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>フロント</h3>
-          <ul class="list">
-            <li>HTML / CSS / TypeScript（基本）</li>
-            <li>React / Vite（簡易ツール）</li>
-            <li>アクセシビリティの初歩</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>その他</h3>
-          <ul class="list">
-            <li>Git（ブランチ運用 / PR）</li>
-            <li>Docker でのローカル開発</li>
-            <li>テスト（JUnit / Jest）</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section container">
-      <div class="section__head">
-        <h2>学生時代の小さな制作</h2>
-        <p class="sub">規模は小さくても、工夫で価値を出す。</p>
-      </div>
-      <div class="grid projects">
-        <article class="card project">
-          <h3>研究室の貸出管理ミニアプリ</h3>
-          <p class="muted">React / Supabase</p>
-          <p>備品の重複予約が減り、<strong>未返却がゼロ</strong>に。UIの必須入力とSlack通知で実現。</p>
-        </article>
-        <article class="card project">
-          <h3>学園祭のタイムテーブル</h3>
-          <p class="muted">Astro / YAML</p>
-          <p>出演者変更に強い静的生成。編集はファイル更新だけでOKに。</p>
-        </article>
-        <article class="card project">
-          <h3>「時短コマンド集」</h3>
-          <p class="muted">Zsh / Make</p>
-          <p>レポート雛形生成や画像圧縮を1コマンド化。<em>みんなの5分</em>を取り戻す。</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="hobby" class="section container">
-      <div class="section__head">
-        <h2>趣味・人となり</h2>
-        <p class="sub">話のタネにどうぞ。</p>
-      </div>
-      <div class="grid hobby">
-        <div class="card">
-          <h3>コーヒー</h3>
-          <p class="muted">浅煎り派。最近はエチオピア・イルガチェフェ。</p>
-        </div>
-        <div class="card">
-          <h3>ランニング</h3>
-          <p class="muted">朝の3kmだけでも気分が違う。</p>
-        </div>
-        <div class="card">
-          <h3>写真</h3>
-          <p class="muted">単焦点35mmでスナップ。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section container">
-      <div class="section__head">
-        <h2>連絡先 / QR</h2>
-        <p class="sub">このページのURLをQRにして名札に貼る予定。</p>
-      </div>
-      <div class="card contact">
-        <dl class="kv">
-          <div><dt>メール</dt><dd><a href="mailto:rin.sato@example.com">rin.sato@example.com</a></dd></div>
-          <div><dt>GitHub</dt><dd><a href="#" aria-disabled="true">github.com/rin-sato（ダミー）</a></dd></div>
-          <div><dt>希望領域</dt><dd>業務システム / 生産性ツール</dd></div>
-          <div><dt>一言</dt><dd>まずは<span class="underline">小さな改善</span>から積み上げます。</dd></div>
-        </dl>
-      </div>
-    </section>
+      </article>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Rin Sato</small>
-      <a class="btn-ghost" href="#top">↑ トップへ</a>
+  <main id="近況報告" class="Recent">
+    <h2 class="section-title container">近況報告</h2>
+    <div class="card-grid container">
+      <!-- Card 1 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
     </div>
+  </main>
+  <main id="人となり" class="person">
+    <h2 class="section-title container">人となり</h2>
+    <div class="card-grid container">
+      <!-- Card 1 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="card reveal-on-scroll" tabindex="0" data-title="Sample text" data-subtitle="Sample text"
+        data-tags="Sample text" data-desc="Sample text" data-link="https://example.com">
+        <picture class="card-media gradient-a"></picture>
+        <div class="card-body">
+          <h3 class="card-title">Sample text</h3>
+          <p class="card-sub">Sample text</p>
+          <p class="card-text">Sample text</p>
+          <button class="btn small open-detail">詳細</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <small>© <span id="year"></span> Koh Uchimi.</small>
   </footer>
+
+  <!-- 詳細モーダル -->
+  <dialog id="detail-dialog" class="detail-dialog">
+    <form method="dialog" class="dialog-inner">
+      <button class="dialog-close">×</button>
+      <h3 id="detail-title"></h3>
+      <p class="detail-sub"></p>
+      <p class="detail-desc"></p>
+      <p class="detail-tags"></p>
+      <p class="detail-link"></p>
+    </form>
+  </dialog>
 
   <script src="script.js" defer></script>
 </body>
+
 </html>
